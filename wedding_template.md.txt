@@ -1,0 +1,2 @@
+Wedding web site
+Example for different alignments (horizontal-center, left), inline-blocks, media querys.

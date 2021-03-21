@@ -1,0 +1,312 @@
+/*=== general stlye ===*/
+
+*,
+::before,
+::after {
+  box-sizing: boder-box;
+}
+
+body {
+background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5 rem;
+  color: #444349;
+}
+
+/*=== header style ===*/
+
+.header-box {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+}
+
+.header-lane {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-textbox {
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.40);
+  margin: 0 auto;
+  padding: .5rem;
+  width: 60vw;
+}
+
+
+.header-tagline {
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+}
+
+.header-tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 60%;
+  margin: .5rem auto;
+}
+
+.date::before, .date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: 'Great vibes', cursive;
+  color: #d2ba87;
+}
+
+.date {
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  vertical-align: middle;
+}
+
+/*=== main ===*/
+
+
+.dark-title {
+  text-align: center;
+  margin: 3rem;
+  padding: .5rem;
+  font-family: 'Great vibes', cursive;
+  font-size: 3rem;
+}
+
+.light-title {
+  text-align: center;
+  margin: 3rem;
+  padding: .5rem;
+  font-family: 'Great vibes', cursive;
+  font-size: 3rem;
+  color: #d2ba87;
+}
+
+.dark-subtitle {
+  margin: 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.light-subtitle {
+  margin-bottom: 2rem;
+  padding: rem;
+  font-size: 1.5rem;
+  color: #d2ba87;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+ }
+
+.pictogram {
+  height: 7rem;
+}
+
+.location-box, .qanda {
+  text-align: center;
+}
+
+.ceremony-box, .photo-box, .party-box, .gift-box, .travel-box, .food-box, .other-box  {
+  display: block;
+  vertical-align: top;
+  margin-bottom: 1.5rem;
+}
+
+.location-info {
+  font-family: 'Muli', sans;
+  margin: .5rem;
+  padding: .1rem;
+}
+
+.pictogram-box {
+  height: 7.3rem;
+}
+
+.dark-box {
+  background-color: hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans;
+  color: #d2ba87;
+  width: 100vw;
+  padding: .1rem;
+}
+
+.program-tagline {
+ font-style: italic;
+ margin-bottom: 1rem;
+ padding-bottom: .5rem;
+ }
+
+
+.time-box {
+  display: grid;
+  width: 100vw;
+  justify-content: center;
+  line-height: 1.5rem;
+}
+
+#last-program {
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+.gift-box {
+  text-align: center;
+  width: 100vw;
+}
+
+.gift-tagline {
+  margin: 1rem;
+  padding: .5rem;
+}
+
+
+.question {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  margin: ;
+  padding: rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  line-height: 1.5rem;
+}
+
+.answer {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  padding: rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.travel-box, .food-box, .other-box {
+  width: 25vw;
+  margin: 1.4rem;
+  padding: .5rem;
+}
+
+.ceremony-box::after, .photo-box::after, .party-box::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: .2rem;
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+.travel-box::after, .food-box::after, .other-box::after {
+  display: block;
+  content:"";
+  background-color: #d2ba87;
+  height: .2rem;
+  width: 70%;
+  margin: 1.5rem auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+}
+
+/* === footer ===*/
+
+footer {
+ width: 100vw;
+ height: 1vh;
+ text-align: center;
+ background-color: #606060;
+ font-family: 'Muli', sans-serif;
+ display: table;
+ padding: 1.5rem;
+ line-height: 1.5rem;
+ font-size: 80%;
+}
+
+small {
+ color: #ffffff;  
+}
+
+.contact-text {
+  line-height: 3rem;
+  margin: 3rem;
+}
+
+.ceremony-box.location-info {
+  color: red;
+}
+/* === media query === */
+
+@media (min-width: 768px) {
+  .header-box {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .ceremony-box::after, .photo-box::after, .party-box::after, .travel-box::after, .food-box::after, .other-box::after {
+    display: none;
+  } 
+}
+
+
+@media (max-width: 768px) {
+  .light-subtitle {
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .travel-box, .food-box, .other-box {
+   width: auto;
+   }
+ }
+
+
+
+@media (min-width: 768px) {
+  .ceremony-box, .photo-box, .party-box, .travel-box, .food-box, .other-box  {
+  display: inline-block;
+  width: 25vw;
+  margin: 1.4rem;
+  padding: .5rem;
+}
+
+
+@media (min-width: 768px) {
+    .header-textbox {
+      width: 50vw;
+    }
+  }
+
+@media (min-width: 768px) {
+    .header-tagline {
+      text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .question, .answer {
+      line-height: 1.7rem;
+      font-family: 'Muli', sans-serif;
+    }
+  }
